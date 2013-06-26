@@ -68,32 +68,16 @@ pre .c {color:#B11D1D;font-weight:bold;}
 двух буквенный префикс "<b>bb-</b>" сжимать не рекомендуется. Но возможна частичное сжатие "<u>bb-имя_обьекта</u>-незжимаемая_часть"<br>
 <br>
 
-<hr>
+
 <br>
-Альтернатива для случия когда [--] использовать нельзя (идея из bem )
+<br>
+Если поддержка старых браузеров (IE6) не важна то "класс состояния" можно сократить и оставить только -флаг-состояния.
+Но классы модификаторов необходимо записывать только в полном виде
 
 <pre>
-<font size="2" face="Courier New" color="black">&#60;div <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта b-имя_обьекта-имя_флага"</font>&#62;
+<font size="2" face="Courier New" color="black">&#60;div <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта -имя_флага m-родитель-xxx m-родитель-xxx--состояние"</font>&#62;
 &nbsp;&nbsp;&#60;div <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта__имя_элемената"</font>&#62;
-&nbsp;&nbsp;&nbsp;&nbsp;&#60;span <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта__name b-имя_обьекта__name-red"</font>&#62;текст текст&#60;/span&#62;
-&nbsp;&nbsp;&nbsp;&nbsp;&#60;span <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта__time"</font>&#62;10:30&#60;/span&#62;
-&nbsp;&nbsp;&nbsp;&nbsp;&#60;/div&#62;
-
-&nbsp;&nbsp;&#60;p <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта__box"</font>&#62;
-&nbsp;&nbsp;&nbsp;&nbsp;&#60;/p&#62;
-&nbsp;&nbsp;&#60;/div&#62;
-</font>
-</pre>
-
-
-<br>
-<br>
-Еще одна альтернатива для случия когда [--] использовать можно :)
-
-<pre>
-<font size="2" face="Courier New" color="black">&#60;div <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта b-имя_обьекта--имя_флага"</font>&#62;
-&nbsp;&nbsp;&#60;div <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта__имя_элемената"</font>&#62;
-&nbsp;&nbsp;&nbsp;&nbsp;&#60;span <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта__name b-имя_обьекта__name--red"</font>&#62;текст текст&#60;/span&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;span <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта__name -red"</font>&#62;текст текст&#60;/span&#62;
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;span <font color="#0000ff">class</font>=<font color="#A31515">"b-имя_обьекта__time"</font>&#62;10:30&#60;/span&#62;
 &nbsp;&nbsp;&nbsp;&nbsp;&#60;/div&#62;
 
